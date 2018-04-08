@@ -1,0 +1,23 @@
+<view class='container'>
+
+  <!-- <view class='topView'>
+
+</view> -->
+  <!-- map.wxml -->
+  <map id="map" longitude='{{longitude}}' latitude='{{latitude}}' scale="16" bindcontroltap="controltap" controls='{{controls}}' markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange='mapCenterMove' show-location='true'>
+    <cover-view class='topView'>
+      <cover-view class='informationView'>
+        <cover-view class='cellView'>
+        经纬度：【{{centerLon}},{{centerLat}}】
+        </cover-view>
+        <cover-view class='cellView'>
+        地址：{{centerFormatted_addresses}}
+        </cover-view>
+        <cover-view class='cellView'>
+        位置：{{centerAddress}}
+        </cover-view>
+      </cover-view>
+    </cover-view>
+  </map>
+
+</view>

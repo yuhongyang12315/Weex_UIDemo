@@ -1,0 +1,26 @@
+/* pages/ui/mapTool/mapTool.wxss */
+
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.topView {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 25rpx;
+}
+
+.informationView {
+  width: calc(100vw - 60rpx);
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  height: calc(10vh - 10rpx);
+}
+
+.cellView {
+  width: calc(100vw - 60rpx);
+  height: calc(3vh - 3rpx);
+  /* background-color: bisque; */
+}

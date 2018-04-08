@@ -1,0 +1,148 @@
+/* pages/characteristicsList/characteristicsList.wxss */
+
+/*轮播title*/
+
+.scrollView_fun {
+  border-bottom: solid 1rpx #f1f1f1;
+  border-top: solid 1rpx #f1f1f1;
+  width: auto;
+  min-width: 100vw;
+  height: 70rpx;
+   background: white; 
+}
+
+.headView {
+  width: auto;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+/*轮播title 每个子view*/
+
+.headView_item {
+  margin: 10rpx;
+  display: flex;
+  flex-direction: column;
+  /* 垂直，水平居中 */
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30rpx;
+  
+}
+
+.swiperView {
+  height: calc(100vh - 90rpx - 70rpx);
+  width: 100vw;
+  /* background-color: burlywood; */
+}
+
+.swiper_item_view {
+  height: calc(100vh - 90rpx - 70rpx);
+  width: 100vw;
+}
+
+.oneview {
+  height: calc(100vh - 90rpx - 70rpx);
+  width: 100vw;
+}
+/*******************cellView*******************/
+.cellView {
+  height: calc(100vh - 90rpx - 70rpx);
+  width: 100vw;
+  margin-top: 26rpx;
+}
+/*******************cell*******************/
+
+.features_item {
+  width: 100vw;
+  height: 255rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: solid 1rpx #f1f1f1;
+  background: white;
+}
+
+/*cell 图片右边的文字view*/
+
+.features_item_rightView {
+  width: calc(100vw - 30rpx - 250rpx - 30rpx - 30rpx);
+  height: 190rpx;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/*cell 图片右边的文字标题*/
+
+.features_item_rightView_title {
+  font-size: 34rpx;
+  line-height: 48rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*cell 图片右边的文字地址view*/
+
+.features_item_rightView_addressView {
+  height: 40rpx;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+/*cell 图片右边的文字地址距离*/
+
+.features_item_rightView_addressDistance {
+  width: auto;
+  min-width: 100rpx;
+  max-width: 180rpx;
+  color: #666;
+  line-height: 40rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*cell 图片右边的文字地址*/
+
+.features_item_rightView_addressText {
+  color: #666;
+  line-height: 40rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.emptyView {
+  width: 100vw;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*星星样式*/
+
+.activity_stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.star-image {
+  width: 25rpx;
+  height: 25rpx;
+  margin-right: 10rpx;
+}
+.one{
+border-bottom:1px solid #00C87D
+
+}
+.two{
+border-bottom:1px solid red
+
+}

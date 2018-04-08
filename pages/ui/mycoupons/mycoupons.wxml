@@ -1,0 +1,38 @@
+<!--我的优惠券-->
+<view class='container'>
+
+    <view id='head-view'>
+        <image id='img-warning' src='{{iconWarning}}'></image>
+        <text id='head-view-text-tip' class='smallText text-gray'>优惠券使用说明</text>
+    </view>
+
+    <scroll-view id='scrool-view' scroll-y='true'>
+        <view wx:if='{{datas.length > 0}}'>
+            <view id='view-item' wx:for='{{datas}}' wx:key='id' wx:for-index='index' wx:for-item='item'>
+                <view id='hover-view' data-index='{{index}}' hover-class='view-hover'>
+                    <view id='angle-round-left'></view>
+
+                    <view id='item-view-center'>
+                        <view id='item-view-center-top'>
+                            <view id='item-view-center-top-left'>
+                                <text id='item-name'>{{item.name}}</text>
+                                <text id='item-time' class='smallText text-gray'>有效期至：{{item.lastTime}}</text>
+                            </view>
+                            <view id='item-money-view' class='smallText'>
+                                <text id='item-money-f'>￥</text>
+                                <text id='item-money-text'>{{item.money}}</text>
+                            </view>
+
+                        </view>
+						<view  id='item-view-center-bottom'>
+                        <text id='item-confine' class='smallText text-gray'>{{item.confine}}</text>
+						</view>
+                    </view>
+
+                    <view id='angle-round-right'></view>
+                </view>
+            </view>
+        </view>
+        <view wx:else class='emptyView'>没有优惠券~~</view>
+    </scroll-view>
+</view>

@@ -1,0 +1,37 @@
+<view class="container">
+    <view class='topTextTitle text-gray'>设备编号:002</view>
+
+    <view class='detailsView'>
+        <image class='topImageView' mode='aspectFill' src='https://wapp-uma-static.oss-cn-hangzhou.aliyuncs.com/shop/2017-09-19/38bc2987243881.png'>
+        </image>
+        <view class='addressText'>{{name}}</view>
+
+        <view class='siteInfomationView'>
+
+            <view class='loacaionView'>
+                <image class='loacaionImage' src='{{icon_address}}'></image>
+                <view class='loacaionText text-gray'>
+                    {{address}}
+                </view>
+                <view class='interval'></view>
+                <view class='loacaionRightView'>
+                    <image class='navImage' src='{{navigation}}' bindtap='navigationAction'></image>
+                    <view class='diatanceText text-gray'>{{distance}}</view>
+                </view>
+            </view>
+
+
+            <view class='phoneView'>
+                <image class='phoneImage' src='{{icon_tel}}'></image>
+                <view class='phoneNumber text-gray'>{{phoneNumber}}</view>
+            </view>
+            <view class='batteryDetails'>
+                <image class='phoneImage' src='{{icon_elec}}'></image>
+                <view class='batteryMiaoshu text-green'>快充空闲{{freebattery}}个</view>
+                <view class='batteryMiaoshu text-red'>使用{{usebattery}}个</view>
+            </view>
+        </view>
+    </view>
+ <!--底部tip-->
+    <text class='smallText' id='text-useTip' bindtap='useTip'>如何使用摩鱼超级充电站</text>
+</view>

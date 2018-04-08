@@ -1,0 +1,112 @@
+/* pages/ui/transactionDetails/transactionDetails.wxss */
+
+.container {
+  background-color: white;
+}
+
+.line-top {
+  width: 100vw;
+  height: 1rpx;
+  background-color: #eee;
+}
+
+.transactionCell {
+  height: 120rpx;
+  width: 95vw;
+  /* 水平居中（设置在子view） */
+  margin: 0 auto;
+  background-color: white;
+}
+
+.transactionCellView {
+  width: 100%;
+  height: 118rpx;
+  /* background-color: blanchedalmond;  */
+  display: flex;
+  flex-direction: row;
+}
+
+.cell_leftView {
+  flex: 2;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cell_leftViewOne {
+  height: 30rpx;
+  width: 400rpx;
+  font-size: 30rpx;
+  padding-bottom: 15rpx;
+  /* background-color: burlywood; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 设置第几行，会发生缩略 */
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  /* 解决三星手机文字上下间距问题 */
+  line-height: 40rpx;
+}
+
+.cell_leftViewTwo {
+  height: 30rpx;
+  width: 300rpx;
+  font-size: 25rpx;
+  padding-top: 15rpx;
+  /* background-color: white; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 设置第几行，会发生缩略 */
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  /* 解决三星手机文字上下间距问题 */
+  line-height: 40rpx;
+}
+
+.cell_rightView {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  /* background-color: blueviolet; */
+}
+
+.cell_rightViewOne {
+  height: 30rpx;
+  width: 200rpx;
+  font-size: 30rpx;
+  text-align: right;
+  padding-bottom: 15rpx;
+  /* background-color: burlywood; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 设置第几行，会发生缩略 */
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  /* 解决三星手机文字上下间距问题 */
+  line-height: 40rpx;
+}
+
+.cell_rightViewTwo {
+  height: 30rpx;
+  width: 200rpx;
+  font-size: 25rpx;
+  text-align: right;
+  padding-top: 15rpx;
+  /* background-color: white; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 设置第几行，会发生缩略 */
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  /* 解决三星手机文字上下间距问题 */
+  line-height: 40rpx;
+}
+
+.line-Cell-botom {
+  width: 100%;
+  height: 2rpx;
+  background-color: #eee;
+}

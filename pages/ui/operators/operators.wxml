@@ -1,0 +1,60 @@
+<!--骑游活动页面-->
+<view class='pageView'>
+    <view class='headView'>
+        <view class='cityView' bindtap='cityBtn'>
+            <view>{{citySelected}}</view>
+            <!-- <image class='cityIcon' src='../../images/2.jpeg'></image> -->
+            <view wx:if='{{!cityDialogShow}}' class='triangle-down'></view>
+            <view wx:else class='triangle-up'></view>
+        </view>
+
+        <view class='selectedView' bindtap='selectBtn'>
+            <view style='color:#00C87D;'>{{selectedType}}</view>
+            <view style='margin-left:20rpx;margin-right:20rpx;color:#666666;'>|</view>
+            <view style='color:#666666;'>状态 v </view>
+        </view>
+    </view>
+
+    <!--活动列表-->
+    <scroll-view class='activityListView' scroll-y='true'>
+        <view wx:for='{{activitys}}' wx:key='id' wx:for-item='item'>
+            
+        </view>
+    </scroll-view>
+
+    <image wx:if='{{floatBtn}}' class='floatBtn' bindtap='floatBtn' src='../../images/activity_float.png'></image>
+
+</view>
+
+
+
+<!--状态筛选弹窗-->
+<view wx:if='{{selectDialogShow}}' class='selectDialogPage'>
+    <view class='selectListView' wx:for='{{selectArrays}}' wx:key='id' wx:for-item='item'>
+        <view wx:if='{{item.selected}}' class='selectListItem' style='color:#00C87D' bindtap='selectTypeClick' data-idx='{{item.id}}' data-sname='{{item.name}}'>
+            <view style='width:200rpx;'>{{item.name}}</view>
+            <image class='selectListItem_image' src='../../images/yes.png'></image>
+        </view>
+        <view wx:else class='selectListItem' bindtap='selectTypeClick' data-idx='{{item.id}}' data-sname='{{item.name}}'>
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+</view>
+
+<!--状态筛选弹窗-->
+<view wx:if='{{cityDialogShow}}' class='selectDialogPage'>
+    <view class='cityDialogView'>
+        <view class='cityDialogView_selectCityView'>
+            <view wx:for='{{cityArrays}}' wx:key='{{id}}' wx:for-item='citem'>
+                <view wx:if='{{citySelectedId == citem.id}}' style='color:#00C87D' class='cityItem' data-id='{{citem.id}}' data-name='{{citem.name}}' bindtap='cityItemClick'>
+                    {{citem.name}}
+                </view>
+
+                <view wx:else class='cityItem' data-id='{{citem.id}}' data-name='{{citem.name}}' bindtap='cityItemClick'>
+                    {{citem.name}}
+                </view>
+            </view>
+        </view>
+        <view class='cityDialogView_moreTip'>更多城市正在探索中，敬请期待...</view>
+    </view>
+</view>

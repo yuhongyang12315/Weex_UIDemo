@@ -1,0 +1,18 @@
+<view class="container">
+  <view class='viewController'>
+    <view class="weui-grids">
+      <view class="weui-grid" wx:for="{{objectArray}}" wx:key="id" >
+
+<!-- data-index绑定下标 -->
+<view class='batteryBox'  data-index='{{item.id}}' bindtap='batteryBoxAction'>
+ <image class='iconImage' src='{{item.imageUrl}}'></image> 
+ <view>{{item.name}}</view>
+</view>
+
+      </view>
+    </view>
+    <view class='userInfomation'>杭州本部渠道</view>
+  </view>
+
+  
+</view>

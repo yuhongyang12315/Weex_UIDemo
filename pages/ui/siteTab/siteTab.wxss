@@ -1,0 +1,182 @@
+/* pages/ui/orderTab/orderTab.wxss */
+
+#searchView {
+  width: 100vw;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#search-leftView {
+  width: calc(100vw - 100rpx);
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#inputView {
+  width: calc(100vw - 100rpx - 20rpx);
+  height: 60rpx;
+  margin-left: 20rpx;
+  border-radius: 8rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+}
+
+#imageSearch {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+
+#searchInput {
+  width: calc(100vw - 100rpx - 80rpx);
+  height: 60rpx;
+  margin-left: 10rpx;
+  border-radius: 8rpx;
+}
+
+.inputPlaceholder {
+  font-size: 30rpx;
+}
+
+#cleanView {
+  width: 100rpx;
+  height: 90rpx;
+  color: #00c87d;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/**************************************************************/
+
+.oneTabView {
+  width: 100vw;
+  height: calc(100vh - 90rpx);
+  /* background-color: burlywood;  */
+}
+
+.cellView {
+  background: white;
+}
+
+.TabViewCell {
+  margin-bottom: 20rpx;
+  width: 100vw;
+  height: 280rpx;
+  /* background-color: burlywood; */
+}
+
+.contentView_Within {
+  margin-left: 30rpx;
+  width: calc(100vw - 60rpx);
+  height: 280rpx;
+  background-color: white;
+}
+
+.contentView_topView {
+  width: calc(100vw - 60rpx);
+  height: 80rpx;
+  /* background-color: brown; */
+}
+
+.contentView_topView_lift {
+  width: calc((100vw - 60rpx)*0.6);
+  height: 80rpx;
+  line-height: 80rpx;
+  float: left;
+}
+
+.contentView_topView_right {
+  width: calc((100vw - 60rpx)*0.4);
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+  float: left;
+}
+
+.contentView_middleView {
+  width: calc(100vw - 60rpx);
+  height: 180rpx;
+  /* background-color: blueviolet; */
+}
+
+.contentView_middleView_view {
+  width: calc(100vw - 50rpx);
+  height: 100%;
+  /* background-color: thistle; */
+}
+
+.contentView_middleView_view_left {
+  width: 95%;
+  height: 100%;
+  /* background-color: bisque; */
+  float: left;
+}
+.contentCell{
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 100%;
+  /*禁止换行,溢出省略*/
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.contentView_middleView_view_right {
+  width: 5%;
+  height: 100%;
+  /* background-color: burlywood; */
+  float: left;
+  display: flex;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+.right_icon{
+
+width: 16rpx;
+  height: 26rpx;
+  /* background-color: red; */
+}
+
+.contentView_botoomView {
+  width: calc(100vw - 60rpx);
+  height: 80rpx;
+  /* background-color: blanchedalmond; */
+}
+
+.sureBikebtn {
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  float: right;
+  color: white;
+  border-radius: 10rpx;
+  background-color: #00c87d;
+}
+
+.cellview {
+  width: 100vw;
+  height: 500rpx;
+}
+
+.line_gray {
+  background: #f1f1f1;
+  width: 100vw;
+  height: 1rpx;
+}
+
+#loadMore {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+}

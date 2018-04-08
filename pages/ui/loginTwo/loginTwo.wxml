@@ -1,0 +1,36 @@
+<!--主页面-->
+<view class='container'>
+  <!--上部logo图片-->
+  <image id='img-logo' src='{{icon_login}}'></image>
+  <view class='titleView'>摩鱼运维端</view>
+  <view id='view-login'>
+    <!--输入手机号-->
+    <view class='item' id='view-phone'>
+      <text id='login-phone-text'>手机号码</text>
+      <input id='input-phone' type='number' maxlength='11' confirm-type='next' placeholder='输入手机号码' bindinput='phoneInput' focus='{{phoneFocus}}' value='{{phoneText}}' />
+      <view id='view-phone-getcode'>
+        <view class='line-v' id='line-getcode'></view>
+        <text id='login-get-code' bindtap='getCode' style='color:{{verifyInfocolor}}'>{{verifyInfo}}</text>
+      </view>
+    </view>
+     <view class='line-padleft'></view> 
+    <!--输入验证码-->
+    <view class='item' id='view-code'>
+      <text id='login-code-text'>验证码</text>
+      <input id='input-code' type='number' maxlength='6' confirm-type='next' placeholder='输入验证码' bindinput='passInput' focus='{{getCodeSuc}}' cursor='{{codeCursor}}' value='{{codeText}}' />
+    </view>
+  </view>
+  <view class='line-padleft'></view> 
+
+  <!--TOast-->
+  <view id='view-toast' wx:if='{{isShowToast}}'>
+    <view id='view-toast-text'>
+      {{toastTip}}
+    </view>
+  </view>
+
+  <!--登录按钮-->
+  <button id='btn-login' class='btn-bottom-red' hover-class='red-button-hover' bindtap='login' style='background-color:{{graycolor}}'>登录</button>
+
+
+</view>

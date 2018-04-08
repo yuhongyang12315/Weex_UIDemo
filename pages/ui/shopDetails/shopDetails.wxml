@@ -1,0 +1,43 @@
+<view class="container">
+  <view class='shopNameView'>商家：丰潭路诚信凤铝门窗</view>
+  <!-- 中部view -->
+  <view class='shopMiddleViewOne'>基本信息</view>
+  <view class='shopMiddleViewTwo'>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>联系人</view>
+      <view class='shopMiddleViewTwo_cell_right'>小明</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>联系电话</view>
+      <view class='shopMiddleViewTwo_cell_right'>13486547901</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>联系地址</view>
+      <view class='shopMiddleViewTwo_cell_right'>丰潭路诚信凤铝门窗</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>合作日期</view>
+      <view class='shopMiddleViewTwo_cell_right'>2018.02.05</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>合作期限</view>
+      <view class='shopMiddleViewTwo_cell_right'>1年</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>订单分成比例（%）</view>
+      <view class='shopMiddleViewTwo_cell_right'>60</view>
+    </view>
+
+  </view>
+
+  <!-- 底部view -->
+<view class='shopMiddleViewOne'>电费设置</view>
+<view class='shopBottomView'>全部由渠道商承担</view>
+
+</view>

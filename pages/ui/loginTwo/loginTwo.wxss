@@ -1,0 +1,187 @@
+/* pages/ui/login/login.wxss */
+
+.container {
+  background: white;
+}
+
+.titleView {
+  margin-left: 30rpx;
+  margin-top: 66rpx;
+  margin-bottom: 66rpx;
+  font-size: 55rpx;
+}
+
+/*上部图片*/
+
+#img-logo {
+  width: 228rpx;
+  height: 46rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+/*登录view*/
+
+#view-login {
+  width: 100vw;
+  height: 290rpx;
+  margin-top: 30rpx;
+  background: white;
+  /* border-top: solid 1rpx #e5e5e5;
+  border-bottom: solid 1rpx #e5e5e5; */
+}
+
+/************输入手机号相关************/
+
+/*输入手机号码view行*/
+
+#view-phone {
+  /* background-color: bisque; */
+  width: calc(100vw - 30rpx);
+  margin-left: 30rpx;
+  height: 130rpx;
+}
+
+/*手机号码文字*/
+
+#login-phone-text {
+  width: 100%;
+  /* height: 30rpx; */
+  display: table-row;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 24rpx;
+}
+
+/*输入手机号码*/
+
+#input-phone {
+  width: 260rpx;
+  float: left;
+  height: 100rpx;
+}
+
+/************获取验证码相关************/
+
+/*获取验证码按钮的view*/
+
+#view-phone-getcode {
+  width: 260rpx;
+  float: right;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: left;
+  color: #969696;
+}
+
+/*获取验证码前面的竖线*/
+
+#line-getcode {
+  width: 1rpx;
+  height: 60rpx;
+  display: table-cell;
+}
+
+/*获取验证码按钮*/
+
+#login-get-code {
+  width: 200rpx;
+  height: 100%;
+  padding-left: 30rpx;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.line-padleft {
+  width: calc(100vw - 60rpx);
+}
+
+/************输入验证码相关************/
+
+/*输入验证码view行*/
+
+#view-code {
+  width: calc(100vw - 30rpx);
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  height: 130rpx;
+}
+
+/*验证码文字*/
+
+#login-code-text {
+  width: 150rpx;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+font-size: 24rpx;
+}
+
+/*输入验证码*/
+
+#input-code {
+  width: 75vw;
+  height: 100rpx;
+}
+
+/*登录按钮*/
+
+#btn-login {
+  position: absolute;
+  left: 5vw;
+  right: 5vw;
+  bottom: 443rpx;
+  border-radius: 45rpx;
+}
+
+/*登录按钮点击态*/
+
+.btn-login-hover {
+  background-color: rgba(240, 91, 72, 0.6);
+}
+
+/*登录提示文字*/
+
+#text-loginTip {
+  width: 100vw;
+  color: #999;
+  font-size: 30rpx;
+  position: absolute;
+  text-align: center;
+  bottom: 74rpx;
+}
+
+/*条款*/
+
+#text-loginCond {
+  color: #576b95;
+}
+
+/*toast*/
+
+#view-toast {
+  width: 70vw;
+  height: 100rpx;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 60vh;
+  left: 15vw;
+  right: 15vw;
+  z-index: 99999;
+}
+
+#view-toast-text {
+  width: auto;
+  max-width: 500rpx;
+  height: auto;
+  max-height: 80rpx;
+  margin: auto;
+  font-size: 30rpx;
+}

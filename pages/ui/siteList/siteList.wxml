@@ -1,0 +1,38 @@
+<view class='container'>
+  <view class='viewController'>
+    <view class='list_table_view' wx:for='{{objectArray}}' wx:key='id' wx:for-item='item'>
+      <view class='list_row_cell'>
+        <view class='list_row_cell_view' bindtap='cellAction' data-index='{{item.id}}' data-siteId='{{item.siteId}}'>
+          <view class='hoverView' hover-class='view-hover'>
+            <!-- {{item.unique}} -->
+            <image class='siteImageView' mode='aspectFill' src='https://wapp-uma-static.oss-cn-hangzhou.aliyuncs.com/shop/2017-09-19/38bc2987243881.png'>
+            </image>
+            <view class='siteRightView'>
+              <view class='RightViewItemsOne'>
+                <view class='RightViewItemsView'>
+                  <view class='siteNameView'>{{item.name}}</view>
+                </view>
+              </view>
+
+              <view class='RightViewItemsTwo'>
+                <view class='RightViewItemsViewTwo'>
+                  <view class='view_one text-gray'>{{item.distance}}</view>
+                  <view class='view_Two text-gray'>|</view>
+                  <view class='view_Three text-gray'>{{item.address}}</view>
+
+                </view>
+              </view>
+
+              <view class='RightViewItemsThree'>
+                <view class='RightViewItemsViewThree'>
+                  <image class='pointLogo' mode='aspectFit' src='/resources/greenPoint.png'></image>
+                  <view class='batteryState'>慢充空闲2个</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

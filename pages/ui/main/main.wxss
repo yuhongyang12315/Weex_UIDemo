@@ -1,0 +1,20 @@
+/* pages/ui/main/main.wxss */
+
+.main_cellView {
+  width: calc(100vw - 60rpx);
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  height: 86rpx;
+  line-height: 86rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  box-shadow: 4px 4px 10px lightgray;
+  
+}
+.cellview_item{
+
+width: calc(100vw - 90rpx);
+  margin-left: 30rpx;
+
+  height: 86rpx;
+}

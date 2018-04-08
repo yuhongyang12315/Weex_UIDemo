@@ -1,0 +1,49 @@
+/* pages/ui/chooseBattery/chooseBattery.wxss */
+
+.viewController {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.weui-grids {
+  /* height: 100vw; */
+  width: calc(100vw - 30rpx);
+  /* 水平居中（设置在子view） */
+  margin: 0 auto;
+   /* background-color: yellowgreen;  */
+}
+.weui-grid {
+  float: left;
+  width: calc((100vw - 30rpx) * 0.33);
+  height: calc((100vw - 30rpx) * 0.33);
+  box-sizing: border-box;
+  /* background-color: red; */
+  /* border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9; */
+}
+
+.batteryBox {
+  height: 80%;
+  width: 60%;
+   /* background-color: bisque;  */
+  /* 水平居中（设置在子view） */
+  margin: 0 auto;
+
+  /* 垂直居中 (1-0.6)*0.1 */
+  margin-top: 15rpx;
+
+}
+.iconImage{
+
+  width: 100%;
+  height: 70%;
+}
+.userInfomation{
+
+  width: 100vw;
+  height: 40rpx;
+  text-align: center;
+  color: red;
+  position: absolute;
+	bottom: 143rpx;
+}

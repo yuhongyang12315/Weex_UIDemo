@@ -1,0 +1,43 @@
+{
+	"pages": [
+    
+    "pages/ui/main/main",
+		"pages/ui/myActivities/myActivities",
+    "pages/ui/operators/operators",
+    "pages/ui/ridingCoin/ridingCoin",
+    "pages/ui/characteristicsList/characteristicsList",
+    "pages/ui/login/login",
+    "pages/ui/mapTool/mapTool",
+    "pages/ui/chooseBattery/chooseBattery",
+    "pages/ui/transactionDetails/transactionDetails",
+    "pages/ui/charging/charging",
+    "pages/ui/mycoupons/mycoupons",
+    "pages/ui/myorder/myorder",
+    "pages/ui/mywallet/mywallet",
+    "pages/ui/siteList/siteList",
+    "pages/ui/loginTwo/loginTwo",
+    "pages/ui/nineUI/nineUI",
+    "pages/ui/orderTab/orderTab",
+    "pages/ui/shopTab/shopTab",
+    "pages/ui/shopDetails/shopDetails",
+    "pages/ui/shopEditor/shopEditor",
+    "pages/ui/shopAdd/shopAdd",
+    "pages/ui/siteEditor/siteEditor",
+    "pages/ui/siteTab/siteTab",
+    "pages/ui/siteAdd/siteAdd",
+  "pages/ui/siteDetail/siteDetail",
+"pages/ui/testEquipment/testEquipment",
+
+    "pages/ui/siteDetails/siteDetails"
+    
+	],
+	"window": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "white",
+		"navigationBarTitleText": "实例",
+		"navigationBarTextStyle": "black"
+	},
+	"networkTimeout": {
+		"request": 10000
+	}
+}

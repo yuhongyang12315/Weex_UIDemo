@@ -1,0 +1,83 @@
+<view class="container">
+  <view class='shopNameView_two'>
+    <view class='shopNameView_two_left'>
+      <view class='shopNameView_two_left_title'>万达A座地下一楼停车场</view>
+      <view class='shopNameView_two_left_text'>所属商家 万达广场</view>
+      <view class='shopNameView_two_left_text'>设备数量 慢充2，快充1</view>
+
+    </view>
+    <view class='shopNameView_two_right'>
+
+    </view>
+  </view>
+  <!-- 中部view -->
+  <view class='shopMiddleViewOne'>基本信息</view>
+  <view class='shopMiddleViewTwo'>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>营业电话</view>
+      <view class='shopMiddleViewTwo_cell_right'>万达广场</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>联系地址</view>
+      <view class='shopMiddleViewTwo_cell_right'>丰潭路诚信凤铝门窗</view>
+    </view>
+
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>经纬度</view>
+      <view class='shopMiddleViewTwo_cell_right'>30.288119，120.09835</view>
+    </view>
+
+  </view>
+
+  <!-- 中部view -->
+  <view class='shopMiddleViewOne'>价格设置</view>
+  <view class='shopBottomView'>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>设备类型</view>
+      <view class='shopMiddleViewTwo_cell_right'>离线</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>快充价格</view>
+      <view class='shopMiddleViewTwo_cell_right'>1元/10分钟</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>慢充价格</view>
+      <view class='shopMiddleViewTwo_cell_right'>1元/2小时</view>
+    </view>
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'></view>
+      <view class='shopMiddleViewTwo_cell_right'>2元/6小时</view>
+    </view>
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'></view>
+      <view class='shopMiddleViewTwo_cell_right'>3元/9小时</view>
+    </view>
+
+  </view>
+
+
+  <!-- 底部view -->
+  <view class='shopMiddleViewOne'>站点设备</view>
+  <view class='shopBottomView'>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>DA000000192</view>
+      <view class='shopMiddleViewTwo_cell_right'>离线</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>DA000000192</view>
+      <view class='shopMiddleViewTwo_cell_right'>正常</view>
+    </view>
+  </view>
+  <view class='btnView'>
+    <button class='buttonAdd'>添加设备</button>
+    <button class='buttonEdit'>编辑</button>
+  </view>
+</view>

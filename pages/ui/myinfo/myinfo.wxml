@@ -1,0 +1,50 @@
+<!--个人中心-->
+<view class='container white-bg'>
+    <!--头像-->
+    <image id='img-userHead' src='{{userHead}}'></image>
+
+    <!--昵称-->
+    <text id='text-userName'>{{userName}}</text>
+
+    <!--中间item-->
+    <view id='view-center' class='smallText'>
+        <!--我的订单-->
+        <view id='view-center-item' bindtap='myOrder' hover-class='view-hover'>
+            <view id='view-center-itemleft-view'>
+                <text>我的订单</text>
+            </view>
+            <image class='icon-right' src='{{iconRight}}'></image>
+        </view>
+        <view class='line-padleft' />
+
+
+        <!--我的钱包-->
+        <view id='view-center-item' bindtap='myWallte' hover-class='view-hover'>
+            <view id='view-center-itemleft-view'>
+                <text>我的钱包</text>
+            </view>
+            <image class='icon-right' src='{{iconRight}}'></image>
+        </view>
+        <view class='line-padleft' />
+
+        <!--我的客服-->
+        <view id='view-center-item' bindtap='myService' hover-class='view-hover'>
+            <view id='view-center-itemleft-view'>
+                <text>我的客服</text>
+            </view>
+            <image class='icon-right' src='{{iconRight}}'></image>
+        </view>
+        <view class='line-padleft' />
+
+        <!--我要合作-->
+        <view id='view-center-item' bindtap='addCoop' hover-class='view-hover'>
+            <view id='view-center-itemleft-view'>
+                <text id='other-lefttext'>我要合作</text>
+            </view>
+            <image class='icon-right' src='{{iconRight}}'></image>
+        </view>
+    </view>
+
+    <!--底部tip-->
+    <text class='smallText' id='text-useTip' bindtap='useTip'>如何使用摩鱼超级充电站</text>
+</view>

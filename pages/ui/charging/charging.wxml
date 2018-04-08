@@ -1,0 +1,12 @@
+<!--充电中-->
+<view class='container white-bg'>
+    <!--订单编号-->
+    <text id='orderNo' class='smallText'>订单编号：{{orderNo}}</text>
+
+	<text id='text-charging-tip' class='smallText text-gray'>剩余充电时间</text>
+	<text id='text-surplus-time'>{{timeText}}</text>
+	<text id='text-interface'>快充接口 | 2号口</text>
+
+	<image id='charging_bg' src='{{charging}}' mode='widthFix'></image>
+	<text id='text-help' class='smallText text-gray'>我要帮助</text>
+</view>

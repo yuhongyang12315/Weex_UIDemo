@@ -1,0 +1,141 @@
+<view class="container">
+  <view class='shopNameView'>站点：丰潭路诚信凤铝门窗</view>
+  <!-- 中部view -->
+  <view class='shopMiddleViewOne'>基本信息</view>
+  <view class='shopMiddleViewTwo'>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>所属商家</view>
+      <input class='shopMiddleViewTwo_cell_right' value='万达广场'></input>
+      <view class='last_rightView'>选择</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>营业电话</view>
+      <input class='shopMiddleViewTwo_cell_right' value='13486547901'></input>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>详细地址</view>
+      <input class='shopMiddleViewTwo_cell_right' value='丰潭路诚信凤铝门窗'></input>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>经纬度</view>
+      <view class='shopMiddleViewTwo_cell_right'>120.23233，30.21312312</view>
+      <view class='last_rightView'>定位</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell_photo'>
+      <view class='shopMiddleViewTwo_cell_left'>照片上传</view>
+      <view class='shopMiddleViewTwo_cell_right_photo'>
+        <image class='shopMiddleViewTwo_cell_right_photo_imagView' src='../../images/thirteen.png'></image>
+      </view>
+      <view class='last_rightView'>更改</view>
+    </view>
+
+
+  </view>
+
+  <!-- 底部view -->
+  <view class='shopMiddleViewOne'>
+    <text class='logoStar'>*</text>电费设置</view>
+
+  <view class='shopBottomView'>
+
+    <view class='shopBottomView_content'>
+
+      <view class='shopBottomView_one'>
+        <view class='shopMiddleViewTwo_cell'>
+          <view class='shopMiddleViewTwo_cell_left'>
+            <text class='logoStar'>*</text>设备类型</view>
+          <view class='shopMiddleViewTwo_cell_right'>快充</view>
+          <view class='last_rightView'>
+            <image class='last_rightView_image' src='../../images/fourteen.png'></image>
+          </view>
+        </view>
+      </view>
+
+      <view class='shopBottomView_two'>
+        <view class='shopBottomView_one_titleView_text'>快充价格</view>
+        <input class='shopBottomView_two_input' value='40'></input>
+        <view class='shopBottomView_two_titleView_text'>元/10分钟</view>
+      </view>
+
+      <view class='shopBottomView_three'>
+        <view class='shopBottomView_three_left'>
+          <view class='shopBottomView_three_left_text'>慢充价格</view>
+        </view>
+
+        <view class='shopBottomView_three_right'>
+
+          <view class='shopBottomView_three_right_cell'>
+            <view class='shopBottomView_three_right_cell_one'>1元</view>
+            <input class='shopBottomView_three_right_cell_input'></input>
+            <view class='shopBottomView_three_right_cell_two'>小时</view>
+          </view>
+
+          <view class='shopBottomView_three_right_cell'>
+            <view class='shopBottomView_three_right_cell_one'>2元</view>
+            <input class='shopBottomView_three_right_cell_input'></input>
+            <view class='shopBottomView_three_right_cell_two'>小时</view>
+          </view>
+
+          <view class='shopBottomView_three_right_cell'>
+            <view class='shopBottomView_three_right_cell_one'>3元</view>
+            <input class='shopBottomView_three_right_cell_input'></input>
+            <view class='shopBottomView_three_right_cell_two'>小时</view>
+          </view>
+
+          <view class='shopBottomView_three_right_cell'>
+            <view class='shopBottomView_three_right_cell_one' >4元</view>
+            <input class='shopBottomView_three_right_cell_input'></input>
+            <view class='shopBottomView_three_right_cell_two'>小时</view>
+          </view>
+
+          <view class='shopBottomView_three_right_cell'>
+            <view class='shopBottomView_three_right_cell_one'>5元</view>
+            <input class='shopBottomView_three_right_cell_input'></input>
+            <view class='shopBottomView_three_right_cell_two'>小时</view>
+          </view>
+
+          <view class='shopBottomView_three_right_cell'>
+            <view class='shopBottomView_three_right_cell_one'>6元</view>
+            <input class='shopBottomView_three_right_cell_input'></input>
+            <view class='shopBottomView_three_right_cell_two'>小时</view>
+          </view>
+
+          <view class='shopBottomView_three_right_cell'>
+            <view class='shopBottomView_three_right_cell_one'>7元</view>
+            <input class='shopBottomView_three_right_cell_input'></input>
+            <view class='shopBottomView_three_right_cell_two'>小时</view>
+          </view>
+
+          <view class='shopBottomView_three_right_cell'>
+            <view class='shopBottomView_three_right_cell_one'>8元</view>
+            <input class='shopBottomView_three_right_cell_input'></input>
+            <view class='shopBottomView_three_right_cell_two'>小时</view>
+          </view>
+
+          <view class='shopBottomView_three_right_cell'>
+            <view class='shopBottomView_three_right_cell_one'>9元</view>
+            <input class='shopBottomView_three_right_cell_input'></input>
+            <view class='shopBottomView_three_right_cell_two'>小时</view>
+          </view>
+
+
+        </view>
+
+      </view>
+
+    </view>
+
+
+    <button class='submitBtn' hover-class='submitBtn_hover'>提交</button>
+  </view>
+
+</view>

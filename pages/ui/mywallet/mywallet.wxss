@@ -1,0 +1,44 @@
+/* pages/ui/mywallet/mywallet.wxss */
+/*头部背景*/
+#view-head {
+	width: calc(100vw - 60rpx);
+	height: 260rpx;
+	margin-top: 30rpx;
+	margin-left: 30rpx;
+	margin-right: 30rpx;
+	background: #F05B48;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
+	border-radius: 10rpx;
+}
+
+/*item -view*/
+#view-item {
+	width: calc(100vw - 60rpx);
+	height: 120rpx;
+	margin-top: 30rpx;
+	margin-left: 30rpx;
+	margin-right: 30rpx;
+	background: white; 
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
+	border-radius: 10rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/*item -hover-view*/
+#hover-view {
+	width: calc(100vw - 60rpx);
+	height: 120rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 10rpx;
+}
+
+/*item左边的文字*/
+#item-text-left {
+	width:  calc(100vw - 90rpx);
+	margin-left: 30rpx;
+	display: flex;
+}

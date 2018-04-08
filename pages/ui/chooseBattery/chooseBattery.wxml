@@ -1,0 +1,68 @@
+<view class="container">
+  <view class='viewController'>
+    <view class='topTextTitle text-gray'>{{equipmentNumber}}</view>
+    <view class="weui-grids">
+      <view class="weui-grid" wx:for="{{dataArray}}" wx:key="id">
+        <!-- data-index绑定下标 -->
+        <!-- 选中状态 -->
+        <view class='batteryBox batteryBox_select' data-index='{{item.id}}' bindtap='batteryBoxAction' wx:if="{{item.id == selectShow}}"  style="color:#FFFFFF;">
+
+          <view class='numberTextView'>{{item.number}}</view>
+          <view class='stateTextView' wx:if="{{item.id == selectShow}}">{{selectShowState}}</view>
+        </view>
+        <!-- 初始化状态 -->
+        <view class='batteryBox' data-index='{{item.id}}' bindtap='batteryBoxAction' style="background:{{item.state=='充电中' ? state_c:state_K}}; color:{{item.state=='充电中' ? state_c_text:state_K_text}};"  wx:else >
+
+          <view class='numberTextView'>{{item.number}}</view>
+          <view class='stateTextView' wx:if="{{item.state == '充电中'}}">{{item.state}}</view>
+          <view class='stateTextView' wx:elif="{{item.state != ''}}">{{item.state}} 空闲</view>
+
+        </view>
+
+      </view>
+    </view>
+    <!-- <view class='bootmView'> -->
+    <!-- 充电时长 -->
+    <view class='list_table_view'>
+      <view class='list_row_cell'>
+        <view class='list_row_cell_view'>
+          <view class='time_leftView'>充电时长</view>
+          <view class='time_RightView'>
+            <picker range='{{timeArray}}' range-key='time' bindchange='TimePickerChange'>
+              {{timeArray[timeArrayIndex].time}}</picker>
+          </view>
+
+          <view class='rightIcon'>
+            <image class='icon-right' src='{{rightImage}}'></image>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <!-- 我的优惠券 -->
+    <view class='list_table_view'>
+      <view class='list_row_cell'>
+        <view class='list_row_cell_view'>
+          <view class='time_leftView'>我的优惠券</view>
+          <view class='time_RightView'>暂无可用</view>
+          <view class='rightIcon'>
+            <image class='icon-right' src='{{rightImage}}'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 应付费用 -->
+    <view class='list_table_view'>
+      <view class='list_row_cell'>
+        <view class='list_row_cell_view'>
+          <view class='time_leftView'>应付费用</view>
+
+          <view class='time_RightView text-red'>{{payMoney}} 元</view>
+
+        </view>
+      </view>
+    </view>
+    <!-- </view> -->
+    <button class='btn-bottom-red' bindtap='pay'>去支付</button>
+  </view>
+</view>

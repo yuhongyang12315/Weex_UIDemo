@@ -1,0 +1,139 @@
+/* pages/ui/siteList/siteList.wxss */
+
+.viewController {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+
+.list_row_cell_view {
+  height: 200rpx;
+}
+.hoverView{
+  /* 不设置背景颜色，才可以使用点击样式 */
+  height: 100%;
+  width: 100%;
+}
+.siteImageView {
+  float: left;
+  height: 200rpx;
+  width: 230rpx;
+  /* 圆角 */
+  border-radius: 10rpx 0rpx 0rpx 10rpx;
+}
+
+.siteRightView {
+  height: 200rpx;
+  width: 65%;
+  /* background-color: rosybrown;   */
+  display: table;
+}
+
+.RightViewItemsOne {
+  height: 40%;
+  display: table-row;
+}
+
+.RightViewItemsView {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.siteNameView {
+  height: 38rpx;
+  line-height: 38rpx;
+  width: 95%;
+  font-size: 35rpx;
+  /* background-color: yellowgreen; */
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 设置第几行，会发生缩略 */
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.RightViewItemsTwo {
+  height: 15%;
+  display: table-row;
+}
+
+.RightViewItemsViewTwo {
+  height: 100%;
+  width: 100%;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: row;
+}
+
+.view_one {
+  height: 28rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 设置第几行，会发生缩略 */
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  /* background-color: rosybrown; */
+}
+
+.view_Two {
+  padding-top: 5rpx;
+  font-size: x-small;
+  text-align: center;
+  flex: 0.3;
+}
+
+.view_Three {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  height: 28rpx;
+  flex: 3;
+  /* background-color: yellow; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 设置第几行，会发生缩略 */
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.RightViewItemsThree {
+  height: 81rpx;
+  display: table-row;
+  /* background: green; */
+}
+
+.RightViewItemsViewThree {
+  height: 100%;
+  width: 100%;
+  /* background-color: bisque;  */
+  display: flex;
+  flex-direction: row;
+}
+
+.pointLogo {
+  flex: 0.4;
+  height: 30rpx;
+  width: 30rpx;
+  /* background-color: brown;  */
+  padding-left: 15rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.batteryState {
+  flex: 4;
+  /* background-color: burlywood;   */
+  height: 60%;
+  font-size: 30rpx;
+  width: 60%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,268 @@
+/**app.wxss**/
+
+/**统一页面样式**/
+.container {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f7;
+  font-size: 30rpx;
+}
+
+/**白色背景**/
+.white-bg {
+  background-color: white;
+}
+
+/**item**/
+.item {
+  height: 120rpx;
+}
+
+/**横线**/
+.line {
+  width: auto;
+  height: 1rpx;
+  background-color: #E5E5E5;
+}
+
+/**横线距离左边30rpx**/
+.line-padleft {
+  width: auto;
+  height: 1rpx;
+  margin-left: 30rpx;
+  background-color: #E5E5E5;
+}
+
+/*删除线*/
+.deleteLine{
+	text-decoration:line-through
+}
+
+/*横向布局*/
+.display_row{
+	display: flex;
+	flex-direction: row;
+}
+
+/*垂直布局*/
+.display_column{
+	display: flex;
+	flex-direction: column;
+}
+
+/*垂直居中*/
+.center_v{
+	align-items: center;
+}
+
+/*水平居中*/
+.cneter_h{
+	justify-content: center;
+}
+
+/*占比1均分flex*/
+.flex_1{
+	flex: 1;
+}
+
+.align_left{
+
+}
+
+.align_right{
+	text-align: right;
+}
+
+/*大号文字 60rpx*/
+.bigText {
+  font-size: 60rpx;
+}
+
+/*小号文字 30rpx*/
+.smallText {
+  font-size: 30rpx;
+}
+
+/*小小号文字 25rpx*/
+.x_smallText {
+  font-size: 25rpx;
+}
+
+/*白色文字*/
+.text-white {
+  color: white;
+}
+
+/*灰色文字*/
+.text-gray {
+  color: #888;
+}
+
+/*红色文字*/
+.text-red {
+  color: #F05B48;
+}
+
+/*绿色文字*/
+.text-green {
+  color: #00c87d;
+}
+
+/*粗体文字*/
+.bold-text {
+  font-weight: bold;
+}
+
+/**竖线**/
+.line-v {
+  width: 1rpx;
+  height: auto;
+  background-color: #f1f1f1;
+}
+
+/**右边图标**/
+.icon-right {
+  display: table-cell;
+  vertical-align: middle;
+  width: 16rpx;
+  height: 26rpx;
+  padding-top: 47rpx;
+  padding-bottom: 47rpx;
+  padding-right: 30rpx;
+}
+
+/*底部按钮统一样式*/
+.btn-bottom {
+  width: 90vw;
+  position: absolute;
+  left: 5vw;
+  right: 5vw;
+  bottom: 63rpx;
+  background: #00c87d;
+  color: white;
+}
+
+/*底部按钮统一样式*/
+.btn-bottom-green-light {
+  width: 90vw;
+  position: absolute;
+  left: 5vw;
+  right: 5vw;
+  bottom: 63rpx;
+  background: rgba(0, 200, 125, 0.6);
+  color: white;
+}
+
+/*底部按钮统一样式 red*/
+.btn-bottom-red {
+  width: 90vw;
+  position: absolute;
+  left: 5vw;
+  right: 5vw;
+  bottom: 63rpx;
+  background: rgba(240, 91, 72, 1);
+  color: white;
+}
+
+/*底部按钮统一样式 red 淡色*/
+.btn-bottom-red-light {
+  width: 90vw;
+  position: absolute;
+  left: 5vw;
+  right: 5vw;
+  bottom: 63rpx;
+  background: rgba(243, 184, 176, 1);
+  color: white;
+}
+
+/*空数据页面*/
+.emptyView {
+  width: 100%;
+  height: 100%;
+  padding-top: 50%;
+  display: table;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+/** 添加view点击态样式类**/
+.view-hover {
+  background-color: #f1f1f1;
+}
+
+/** 添加按钮点击态样式类**/
+.button-hover {
+  background-color: rgba(0, 179, 112, 1);
+}
+
+/** 添加退出按钮点击态样式类**/
+.red-button-hover {
+  background-color: rgba(243, 184, 176, 0.8);
+}
+
+/** list列表渲染 **/
+/* <view class='list_table_view'>
+    <view class='list_row_cell'>
+        <view class='list_row_cell_view'>
+        
+        </view>
+      </view>
+  </view> */
+
+.list_table_view {
+  height: 250rpx;
+  width: 100vw;
+  display: table;
+}
+
+.list_row_cell {
+  background-color: #f1f1f1;
+  display: table-cell;
+  /* 垂直居中（设置在父view） */
+  vertical-align: middle;
+}
+
+.list_row_cell_view {
+  height: 250rpx;
+  width: 90vw;
+  /* 水平居中（设置在子view） */
+  margin: 0 auto;
+  /* 背景色 */
+  background-color: white;
+  /* 圆角 */
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  /* 阴影 */
+  box-shadow: 0 4rpx 10rpx 0 rgba(0,0,0,0.1);
+}
+
+/****************文档样式***************/
+/*标题*/
+.word_title{
+	width: calc(100vw - 60rpx);
+	height: auto;
+	margin-left: 30rpx;
+	font-size: 30rpx;
+	font-weight: bold;
+}
+
+/*文字*/
+.word_text{
+	width: calc(100vw - 90rpx);
+	height: auto;
+	margin-left: 50rpx;
+	margin-top: 10rpx;
+	font-size: 30rpx;
+}
+
+/*word文字View块*/
+.word_view{
+	width: 100vw;
+	height: auto;
+	margin-top: 30rpx;
+	display: flex;
+	flex-direction: column;
+}
+

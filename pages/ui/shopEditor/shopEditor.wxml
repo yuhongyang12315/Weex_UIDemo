@@ -1,0 +1,84 @@
+<view class="container">
+  <view class='shopNameView'>商家：丰潭路诚信凤铝门窗</view>
+  <!-- 中部view -->
+  <view class='shopMiddleViewOne'>基本信息</view>
+  <view class='shopMiddleViewTwo'>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>联系人</view>
+      <input class='shopMiddleViewTwo_cell_right' value='小明'></input>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>联系电话</view>
+      <input class='shopMiddleViewTwo_cell_right' value='13486547901'></input>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>联系地址</view>
+      <input class='shopMiddleViewTwo_cell_right' value='丰潭路诚信凤铝门窗'></input>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>合作日期</view>
+      <view class='shopMiddleViewTwo_cell_right'>2018.02.05</view>
+      <view class='last_rightView'>选择</view>
+    </view>
+
+    <view class='shopMiddleViewTwo_cell'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>合作期限</view>
+      <view class='shopMiddleViewTwo_cell_right'>1年</view>
+      <view class='last_rightView'>
+        <image class='last_rightView_image' src='../../images/fourteen.png'></image>
+      </view>
+
+    </view>
+
+    <view class='shopMiddleViewTwo_cell_last'>
+      <view class='shopMiddleViewTwo_cell_left'>
+        <text class='logoStar'>*</text>订单分成比例(%)</view>
+      <input class='shopMiddleViewTwo_cell_right' value='60'></input>
+    </view>
+
+  </view>
+
+  <!-- 底部view -->
+  <view class='shopMiddleViewOne'><text class='logoStar'>*</text>电费设置</view>
+
+  <view class='shopBottomView'>
+
+    <view class='shopBottomView_content'>
+
+      <view class='shopBottomView_one'>
+        <view class='shopBottomView_one_titleView'>
+          <image class='shopBottomView_one_titleView_image' src='../../images/nine.png'></image>
+          <view class='shopBottomView_one_titleView_text'>按比例分摊，商家承担比例设置（%）</view>
+        </view>
+        <input class='shopBottomView_one_input' value='40'></input>
+      </view>
+
+      <view class='shopBottomView_two'>
+        <image class='shopBottomView_one_titleView_image' src='../../images/nine.png'></image>
+        <view class='shopBottomView_one_titleView_text'>全部由商家承担</view>
+      </view>
+
+      <view class='shopBottomView_two'>
+        <image class='shopBottomView_one_titleView_image' src='../../images/nine.png'></image>
+        <view class='shopBottomView_one_titleView_text'>全部由渠道商承担</view>
+      </view>
+
+      <view class='shopBottomView_two'>
+        <view class='shopBottomView_one_titleView_text'>电费设置</view>
+        <input class='shopBottomView_two_input' value='40'></input>
+        <view class='shopBottomView_two_titleView_text'>元/度</view>
+      </view>
+    </view>
+<button class='submitBtn' hover-class='submitBtn_hover'>提交</button>
+  </view>
+
+</view>

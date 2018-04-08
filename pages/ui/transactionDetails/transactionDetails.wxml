@@ -1,0 +1,22 @@
+<view class='container'>
+<!-- 顶部线 -->
+<view class='line-top'></view>
+
+  <view class='transactionCell' wx:for='{{dataArray}}' wx:key='id' wx:for-item='item'>
+    <view class='transactionCellView'>
+    <!-- 左侧 -->
+    <view class='cell_leftView'>
+    <view class='cell_leftViewOne text-gray'>{{item.name}}</view>
+    <view class='cell_leftViewTwo text-gray'>{{item.tradTime}}</view>
+    </view>
+    <!-- 右侧 -->
+    <view class='cell_rightView'>
+    <view class='cell_rightViewOne text-gray'>-{{item.payMoney}}</view>
+    <view class='cell_rightViewTwo text-gray'>设备编号：{{item.equipmentNumber}}</view>
+    </view>
+
+    </view>
+<!-- cell底部线 -->
+    <view class='line-Cell-botom'></view>
+  </view>
+</view>

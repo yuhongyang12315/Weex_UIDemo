@@ -1,0 +1,205 @@
+/* pages/ui/orderTab/orderTab.wxss */
+
+#searchView {
+    width: 100vw;
+    height: 90rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#search-leftView {
+    width: calc(100vw - 100rpx);
+    height: 90rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#inputView {
+    width: calc(100vw - 100rpx - 20rpx);
+    height: 60rpx;
+    margin-left: 20rpx;
+    border-radius: 8rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+}
+
+#imageSearch {
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: 20rpx;
+}
+
+#searchInput {
+    width: calc(100vw - 100rpx - 80rpx);
+    height: 60rpx;
+    margin-left: 10rpx;
+    border-radius: 8rpx;
+}
+
+.inputPlaceholder {
+    font-size: 30rpx;
+}
+
+#cleanView {
+    width: 100rpx;
+    height: 90rpx;
+    color: #00c87d;
+    font-size: 32rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/**************************************************************/
+
+.oneTabView {
+  width: 100vw;
+  height: calc(100vh - 90rpx);
+  /* background-color: burlywood;  */
+}
+
+.cellView {
+  background: white;
+}
+
+.TabViewCell {
+  margin-bottom: 20rpx;
+  width: 100vw;
+  height: 480rpx;
+  /* background-color: burlywood; */
+}
+
+.contentView_Within {
+  margin-left: 30rpx;
+  width: calc(100vw - 60rpx);
+  height: 480rpx;
+  background-color: white;
+}
+
+.contentView_topView {
+  width: calc(100vw - 60rpx);
+  height: 80rpx;
+  /* background-color: brown; */
+}
+
+.contentView_topView_lift {
+  width: calc((100vw - 60rpx)*0.6);
+  height: 80rpx;
+  line-height: 80rpx;
+  float: left;
+}
+
+.contentView_topView_right {
+  width: calc((100vw - 60rpx)*0.4);
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+  float: left;
+}
+
+.contentView_middleView {
+  width: calc(100vw - 60rpx);
+  height: 320rpx;
+  /* background-color: blueviolet; */
+}
+
+.contentView_middleView_view {
+  padding-top: 15rpx;
+  width: calc(100vw - 60rpx);
+  height: calc(100% - 30rpx);
+  /* background-color: thistle; */
+}
+
+.contentView_middleView_view_cell {
+  width: calc(100vw - 60rpx);
+  height: calc((100% - 30rpx)*0.19);
+  background-color: white;
+}
+.TabViewCell_else {
+  margin-top: 20rpx;
+  width: 100vw;
+  height: 480rpx;
+  /* background-color: burlywood; */
+}
+.contentView_Within_else {
+  margin-left: 30rpx;
+  width: calc(100vw - 60rpx);
+  height: 480rpx;
+  background-color: white;
+}
+.contentView_middleView_else {
+  width: calc(100vw - 60rpx);
+  height: 400rpx;
+   /* background-color: blueviolet;  */
+}
+
+.contentView_middleView_view_else {
+  padding-top: 15rpx;
+  width: calc(100vw - 60rpx);
+  height: calc(100% - 30rpx);
+  /* background-color: thistle; */
+}
+.contentView_middleView_view_cell_else {
+  width: calc(100vw - 60rpx);
+  height: calc((100% - 30rpx)*0.135);
+  background-color: white;
+}
+
+.contentView_middleView_view_left {
+  width: calc((100vw - 60rpx)*0.3);
+  height: 100%;
+  float: left;
+  font-size: 30rpx;
+  color: #888888;
+}
+
+.contentView_middleView_view_right {
+  width: calc((100vw - 60rpx)*0.7);
+  height: 100%;
+  text-align: right;
+  float: left;
+  font-size: 30rpx;
+  color: #888888;
+}
+
+.contentView_botoomView {
+  width: calc(100vw - 60rpx);
+  height: 80rpx;
+  /* background-color: blanchedalmond; */
+}
+
+.sureBikebtn {
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  float: right;
+  color: white;
+  border-radius: 10rpx;
+  background-color: #00c87d;
+}
+
+.cellview {
+  width: 100vw;
+  height: 500rpx;
+}
+
+.line_gray {
+  background: #f1f1f1;
+  width: 100vw;
+  height: 1rpx;
+}
+
+
+#loadMore {
+    display: flex;
+    flex-direction: row;
+    height: 100rpx;
+    justify-content: center;
+    align-items: center;
+}

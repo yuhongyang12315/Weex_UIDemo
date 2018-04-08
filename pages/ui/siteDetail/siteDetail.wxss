@@ -1,0 +1,117 @@
+/* pages/ui/shopDetails/shopDetails.wxss */
+
+.shopNameView_two {
+  margin-top: 15rpx;
+  background-color: white;
+  height: 168rpx;
+  line-height: 100rpx;
+  width: 100vw;
+}
+
+.shopNameView_two_left {
+  height: 168rpx;
+  width: 65vw;
+  margin-left: 30rpx;
+  /* background: bisque; */
+  float: left;
+  font-size: 26rpx;
+}
+
+.shopNameView_two_left_title {
+  height: 68rpx;
+  line-height: 68rpx;
+  width: 65vw;
+  font-size: 30rpx;
+}
+
+.shopNameView_two_left_text {
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 65vw;
+  color: #999;
+}
+
+.shopNameView_two_right {
+  height: 168rpx;
+  width: 25vw;
+  margin-right: 30rpx;
+  background: bisque;
+  float: right;
+}
+
+.shopMiddleViewOne {
+  margin-top: 15rpx;
+  background-color: white;
+  height: 70rpx;
+  line-height: 70rpx;
+  width: calc(100vw - 30rpx);
+  padding-left: 30rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+
+.shopMiddleViewTwo {
+  background-color: white;
+  height: 160rpx;
+  width: calc(100vw - 30rpx);
+  padding-left: 30rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+  font-size: 25rpx;
+}
+
+.shopMiddleViewTwo_cell {
+  height: calc(300rpx * 0.17);
+  width: 100%;
+  /* background: bisque; */
+}
+
+.shopMiddleViewTwo_cell_left {
+  height: calc(300rpx * 0.17);
+  line-height: calc(300rpx * 0.17);
+  width: 30%;
+  float: left;
+  color: #999;
+  /* background: red; */
+}
+
+.shopMiddleViewTwo_cell_right {
+  height: calc(300rpx * 0.17);
+  line-height: calc(300rpx * 0.17);
+  width: calc(70vw - 50rpx);
+  float: left;
+  text-align: right;
+  color: #999;
+  /* background: burlywood; */
+}
+
+.shopBottomView {
+  background-color: white;
+  /* height: 70rpx; *//* line-height: 70rpx; */
+  width: calc(100vw - 30rpx);
+  padding-left: 30rpx;
+  color: #999;
+  font-size: 25rpx;
+}
+
+.buttonAdd {
+  margin-top: 66rpx;
+  margin-left: 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 40vw;
+  float: left;
+  border: 1rpx solid #f05b48;
+  color: #f05b48;
+  border-radius: 50rpx;
+}
+
+.buttonEdit {
+  margin-top: 66rpx;
+  margin-right: 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 40vw;
+  float: right;
+  background: #f05b48;
+  color: white;
+  border-radius: 50rpx;
+}

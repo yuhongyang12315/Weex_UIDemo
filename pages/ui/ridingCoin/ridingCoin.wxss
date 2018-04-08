@@ -1,0 +1,205 @@
+/* pages/ridingCoin/ridingCoin.wxss */
+
+/* 头部背景 */
+
+.headImg {
+  width: 100vw;
+  height: 400rpx;
+}
+
+/* 骑行币内容 */
+
+.view_one {
+  width: 50vw;
+  height: 200rpx;
+  /* background: chartreuse; */
+  position: absolute;
+  top: 90rpx;
+  left: 25vw;
+  display: flex;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  flex-wrap: wrap;
+}
+
+.view_one_text_one {
+  width: 100%;
+  height: 100rpx;
+  font-size: 72rpx;
+  color: #f1d2ba;
+  text-align: center;
+  font-family: Brown-Light;
+}
+
+.view_one_text_two {
+  text-align: center;
+  width: 100%;
+  height: 100rpx;
+  font-family: PingFangSC-Light;
+  font-size: 32rpx;
+  color: #f1d2ba;
+}
+
+/* 兑换 */
+
+.view_two {
+  margin-top: 30rpx;
+  background: white;
+  width: 100vw;
+  height: 90rpx;
+}
+
+.exchangeLab {
+  margin-left: 30rpx;
+  float: left;
+  width: 300rpx;
+  height: 90rpx;
+  /* text-align: center; */
+  line-height: 90rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #222;
+}
+
+.exchangeBtn {
+  margin-right: 30rpx;
+  margin-top: 15rpx;
+  float: right;
+  width: 111rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  color: white;
+  text-align: center;
+  line-height: 60rpx;
+  background: #00c87d;
+  box-shadow: 0 4px 9px 0 rgba(0, 200, 125, 0.20);
+  border-radius: 40rpx;
+}
+
+/* 提示详情 */
+
+.view_three {
+  margin-top: 50rpx;
+  /* background: bisque; */
+  width: 100vw;
+  height: 350rpx;
+}
+
+.view_three_text-one {
+  margin-left: 60rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #666;
+  line-height: 48rpx;
+}
+
+.textCell {
+  margin-left: 60rpx;
+  /* background: white; */
+  width: calc(100vw - 60rpx);
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+}
+
+.pointView {
+  background: black;
+  height: 10rpx;
+  width: 10rpx;
+  border-radius: 10rpx;
+}
+
+.textView {
+  margin-left: 10rpx;
+  font-family: PingFangSC-Light;
+  font-size: 26rpx;
+  color: #2a2a2a;
+  width: calc(100% - 100rpx);
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+/* 弹窗 */
+
+/*mask*/
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+/*content*/
+
+.drawer_box {
+  width: 80vw;
+  height: 300rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #fafafa;
+  margin-top: -180px;
+  margin-left: calc(20vw*0.5);
+  border-radius: 5px;
+}
+
+.alert_title {
+  width: 80vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  /* background-color: blanchedalmond; */
+}
+
+.alert_input {
+  width: 70vw;
+  height: 60rpx;
+  margin-left: 5vw;
+  background: #fff;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  font-size: 30rpx;
+}
+
+.line_X {
+  margin-top: 30rpx;
+  width: 80vw;
+  height: 3rpx;
+  background: #e5e5e5;
+}
+
+.left_Btn {
+  float: left;
+  width: calc((80vw - 1rpx) * 0.5);
+  height: calc(300rpx - 30rpx - 3rpx - 60rpx - 100rpx);
+  text-align: center;
+  line-height: calc(300rpx - 30rpx - 3rpx - 60rpx - 100rpx);
+  color: #02BB00;
+  /* background-color: bisque; */
+}
+
+.line_y {
+  float: left;
+  background: #e5e5e5;
+  width: 1rpx;
+  height: calc(300rpx - 30rpx - 3rpx - 60rpx - 100rpx);
+}
+
+.Right_Btn {
+  float: right;
+  width: calc((80vw - 1rpx) * 0.5);
+  height: calc(300rpx - 30rpx - 3rpx - 60rpx - 100rpx);
+  text-align: center;
+  line-height: calc(300rpx - 30rpx - 3rpx - 60rpx - 100rpx);
+  /* background-color: bisque; */
+}
+
+/* 弹窗 */

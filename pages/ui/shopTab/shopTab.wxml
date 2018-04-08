@@ -1,0 +1,51 @@
+<!--订单搜索-->
+<view class="container">
+  <!--搜索-->
+  <view id='searchView'>
+    <view id='search-leftView'>
+      <view id='inputView'>
+        <image id='imageSearch' src='../../../resources/icon-search.png'></image>
+        <input id='searchInput' placeholder-class='inputPlaceholder' placeholder="搜索商家名称~" maxlength='20' bindinput='inputText' confirm-type='search' focus='true' bindconfirm='search' />
+      </view>
+
+    </view>
+    <text id='cleanView' bindtap='cancelAction'>取消</text>
+  </view>
+
+  <!--列表-->
+  <scroll-view class='oneTabView' scroll-y='true' bindscroll='scroll' bindscrolltoupper='scrolltop' bindscrolltolower='scrollbottom' upper-threshold='0' lower-threshold='0'>
+    <view id='loadMore' class='smallText text-gray' wx:if='{{loadRefreshTip}}'>松开刷新</view>
+    <view id='loadMore' class='smallText text-gray' wx:if='{{loadRefresh}}'>正在刷新...</view>
+    <view wx:if='{{datas.length > 0}}'>
+      <view class='cellView' wx:for="{{datas}}" wx:key='id' wx:for-item='item' bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+        <view class='TabViewCell' wx:if="{{datas.length}}">
+
+          <view class='contentView_Within'>
+            <view class='contentView_topView'>
+              <view class='contentView_topView_lift '>{{item.shopName}}</view>
+              <!-- <view class='contentView_topView_right text-green'>骑行中</view> -->
+            </view>
+            <view class='contentView_middleView'>
+              <view class='contentView_middleView_view'>
+                <view class='contentView_middleView_view_left'>
+                <view class='contentCell'>商家地址<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{item.shopAdress}}</view>
+                <view class='contentCell'>联系人<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{item.user_name}}</view>
+                <view class='contentCell'>联系电话<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{item.mobile}}</view>
+                </view>
+                <view class='contentView_middleView_view_right'>
+                <image class='right_icon' src='{{icon_right}}'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+ 
+      </view>
+    </view>
+    <view wx:if='{{datas.length == 0}}' class='emptyView'>没有订单~</view>
+    <!-- 加载提示 -->
+    <view id='loadMore' class='smallText text-gray' wx:if='{{loadMore}}'>正在加载更多...</view>
+    <view id='loadMore' class='smallText text-gray' wx:if='{{loadMoreNoData}}'>已加载全部</view>
+
+  </scroll-view>
+</view>

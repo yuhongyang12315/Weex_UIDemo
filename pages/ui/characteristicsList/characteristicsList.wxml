@@ -1,0 +1,46 @@
+<view class='pageView'>
+
+  <!-- 选择区域 -->
+  <scroll-view scroll-x='true' class='scrollView_fun'>
+    <view class='headView'>
+      <view wx:for='{{titleArray}}' wx:key='id' wx:for-item="item" class='headView_item'  bindtap='indexAction' data-index='{{item.id}}'>
+        <view style='width:{{item.title.length*30}}rpx;text-align: center;border-bottom-style: solid; border-bottom-color: {{currentIndex==item.id ?navColor_p : navLineColor_n}};border-bottom-width: {{currentIndex==item.id ?navLineHeight_p : navLineHeight_n}}rpx'>{{item.title}}</view>
+      </view>
+    </view>
+  </scroll-view>
+
+<!-- 分页控制器 -->
+  <swiper class='swiperView' current='{{currentIndex}}' bindchange='SwiperChange'>
+  <!-- 页面控制器 -->
+    <swiper-item class='swiper_item_view' wx:for='{{titleArray}}' wx:key='id' wx:for-item='item'>
+    <!--cellView  -->
+      <view class='cellView smallText'>
+        <view wx:for='{{features}}' wx:key='id' wx:for-item='item'>
+          <view class='features_item'>
+            <image style='width:250rpx;height:190rpx;margin-left:30rpx;' src='../../images/2.jpeg'></image>
+            <view class='features_item_rightView'>
+              <view class='features_item_rightView_title'>{{item.name}}</view>
+              <view class='features_item_rightView_addressView'>
+                <view class='features_item_rightView_addressDistance'>999米</view>
+                <view style='color:#666666;margin-left:20rpx;margin-top:-10rpx;margin-right:20rpx;'>|</view>
+                <view class='features_item_rightView_addressText'>{{item.address}}</view>
+              </view>
+              <view style='height:40rpx;display: flex;flex-direction: row;color:#666666;margin-top:52rpx;align-items: center;'>
+                <text>推荐指数：</text>
+                <view class='activity_stars'>
+                  <view wx:for='{{[0,1,2,3,4]}}' wx:key='id' wx:for-item='sitem'>
+                    <image class='star-image' src='{{item.stars > sitem ?(item.stars - sitem == 0.5?halfSrc:selectedSrc) : normalSrc}}' />
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!--cellView  -->
+    </swiper-item>
+    <!-- 页面控制器 -->
+  </swiper>
+  <!-- 分页控制器 -->
+
+</view>

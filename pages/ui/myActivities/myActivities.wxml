@@ -1,0 +1,47 @@
+<!--我的活动页面-->
+<view class='pageView'>
+  <!-- 选择区域 -->
+  <scroll-view scroll-x='true' class='scrollView_fun'>
+    <view class='headView'>
+      <view wx:for='{{titleArray}}' wx:key='id' wx:for-item="item" class='headView_item'  bindtap='indexAction' data-index='{{item.id}}'>
+        <view style='width:{{item.title.length*30}}rpx;text-align: center;border-bottom-style: solid; border-bottom-color: {{currentIndex==item.id ?navColor_p : navLineColor_n}};border-bottom-width: {{currentIndex==item.id ?navLineHeight_p : navLineHeight_n}}rpx'>{{item.title}}</view>
+      </view>
+    </view>
+  </scroll-view>
+<!-- 分页控制器 -->
+  <swiper class='swiperView' current='{{currentIndex}}' bindchange='SwiperChange'>
+  <!-- 页面控制器 -->
+    <swiper-item class='swiper_item_view' wx:for='{{titleArray}}' wx:key='id' wx:for-item='item'>
+<!--活动列表-->
+    <scroll-view class='activityListView' scroll-y='true'>
+    <view class='margin_view'></view>
+        <view wx:for='{{activitys}}' wx:key='id' wx:for-item='item'>
+            <view class='activity_item' bindtap='cilckItem'>
+                <image style='width:250rpx;height:190rpx;margin-left:30rpx;' src='../../images/2.jpeg'></image>
+                <view class='activity_item_rightView'>
+                    <view class='activity_item_rightView_title'>{{item.name}}</view>
+                    <view class='activity_item_rightView_addressView'>
+                        <image class='activity_item_rightView_addressIcon' src='../../images/dingwei.png'></image>
+                        <view class='activity_item_rightView_addressText'>聚集地：{{item.place}}</view>
+                    </view>
+                    <view class='activity_item_rightView_addressView'>
+                        <image class='activity_item_rightView_dataIcon' src='../../images/icon_data.png'></image>
+                        <view class='activity_item_rightView_addressText' wx:if='{{item.type == 1}}'>报名中，开始日期：12-25</view>
+                        <view class='activity_item_rightView_addressText' wx:elif='{{item.type == 2}}'>进行中，结束日期：12-25</view>
+                        <view class='activity_item_rightView_addressText' wx:elif='{{item.type == 3}}'>已结束</view>
+                    </view>
+                    <view class='activity_item_rightView_moneyView'>
+                        <view style='color:#E60000;font-size:32rpx;'>{{item.monty}}元</view>
+                        <view style='margin-left:30rpx;color: #666666;' wx:if='{{item.type == 1 && item.fullType == 1}}'>{{item.enrolcount}}人已报名<text style='color:#FE962C;'>（已满额）</text></view>
+						<view style='margin-left:30rpx;color: #666666;' wx:else>{{item.enrolcount}}人已报名</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</swiper-item>
+    <!-- 页面控制器 -->
+  </swiper>
+  <!-- 分页控制器 -->
+
+</view>

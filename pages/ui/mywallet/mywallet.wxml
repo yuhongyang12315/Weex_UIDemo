@@ -1,0 +1,19 @@
+<!--我的钱包-->
+<view class='container'>
+    <image id='view-head' src='{{headBg}}' mode='scaleToFill'></image>
+
+    <view id='view-item'>
+        <view id='hover-view' hover-class='view-hover' bindtap='mycoupons'>
+            <text class='smallText' id='item-text-left'>我的优惠券</text>
+            <image class='icon-right' src='{{iconRight}}'></image>
+        </view>
+    </view>
+
+    <view id='view-item'>
+        <view id='hover-view' hover-class='view-hover' bindtap='transactionDetailsAction'>
+            <text class='smallText' id='item-text-left'>交易明细</text>
+            <image class='icon-right' src='{{iconRight}}'></image>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,98 @@
+<view class="container">
+  <view class='viewController'>
+
+
+    <!-- <view class='topTextTitle text-gray'>1231231231</view> -->
+    <view class='topView'>
+      <view class='topView_left'>测试设备二维码</view>
+      <input class='topView_input' placeholder='请输入设备二维码' value='{{erweimaString}}'></input>
+      <view class='last_rightView' bindtap='clickErWeiMa'>
+        <image class='last_rightView_image_two' src='../../images/eight.png' ></image>
+      </view>
+    </view>
+
+    <view class='viewOne'>测试端口选择</view>
+    <!-- 端口选择区域 -->
+    <view class="weui-grids">
+      <view class="weui-grid" wx:for="{{dataArray}}" wx:key="id">
+        <!-- data-index绑定下标 -->
+        <!-- 选中状态 -->
+        <view class='batteryBox batteryBox_select' data-index='{{item.id}}' bindtap='batteryBoxAction' wx:if="{{item.id == selectShow}}" style="color:#FFFFFF;">
+
+          <view class='numberTextView'>{{item.number}}</view>
+          <view class='stateTextView' wx:if="{{item.id == selectShow}}">{{selectShowState}}</view>
+        </view>
+        <!-- 初始化状态 -->
+        <view class='batteryBox' data-index='{{item.id}}' bindtap='batteryBoxAction' style="background:{{item.state=='充电中' ? state_c:state_K}}; color:{{item.state=='充电中' ? state_c_text:state_K_text}};" wx:else>
+
+          <view class='numberTextView'>{{item.number}}</view>
+          <view class='stateTextView' wx:if="{{item.state == '充电中'}}">{{item.state}}</view>
+          <view class='stateTextView' wx:else>{{item.state}} 空闲</view>
+
+        </view>
+
+      </view>
+    </view>
+    <!-- <view class='bootmView'> -->
+    <!-- 充电时长 -->
+    <!-- <view class='list_table_view'>
+      <view class='list_row_cell'>
+        <view class='list_row_cell_view'>
+          <view class='time_leftView'>充电时长</view>
+          <view class='time_RightView'>
+            <picker range='{{timeArray}}' range-key='time' bindchange='TimePickerChange'>
+              {{timeArray[timeArrayIndex].time}}</picker>
+          </view>
+
+          <view class='rightIcon'>
+            <image class='icon-right' src='{{rightImage}}'></image>
+          </view>
+
+        </view>
+      </view>
+    </view> -->
+    <view class='viewOne'>测试时间选择</view>
+    <!-- 端口选择区域 -->
+    <view class="weui-gridsTwo">
+      <view class="weui-grid" wx:for="{{timeArray}}" wx:key="id">
+        <!-- data-index绑定下标 -->
+        <!-- 选中状态 -->
+        <view class='batteryBox batteryBox_select' data-index='{{item.id}}' bindtap='batteryTimeBoxAction' wx:if="{{item.id == selectTimeShow}}" style="color:#FFFFFF;">
+
+          <view class='numberTextView'>{{item.number}}</view>
+          <view class='stateTextView' wx:if="{{item.id == selectTimeShow}}">{{selectTimeShowState}}</view>
+        </view>
+        <!-- 初始化状态 -->
+        <view class='batteryBox' data-index='{{item.id}}' bindtap='batteryTimeBoxAction' style="background:{{state_K}}; color:{{state_K_text}};" wx:else>
+
+          <view class='numberTextView'>{{item.number}}</view>
+          <view class='stateTextView'>{{item.state}}</view>
+
+        </view>
+      </view>
+    </view>
+    <!-- style='{{modeType == 0 }}' -->
+    <view class='viewOne'>发送方式</view>
+    <view class='btnCellView_BoxView'>
+      <view class='btnCellView_Box' style='color:{{modeType == 1 ? state_K:state_K_text}};background-color:{{modeType == 1 ? state_K_S:state_K}};' bindtap='modeAction' data-modeindex='1'>GPRS</view>
+      <view class='btnCellView_Box'  style='color:{{modeType == 2 ? state_K:state_K_text}};background-color:{{modeType == 2 ? state_K_S:state_K}};' bindtap='modeAction' data-modeindex='2'>短信</view>
+    </view>
+    <!-- 1 设备测试 2 关闭充电 3 一键所有端口充电 4 一键所有端口关闭充电 -->
+    <view class='btnCellView'>
+      <view class='letf_btn' hover-class='hoverClass' bindtap='testAction' data-action_type='1'>选中端口充电</view>
+      <view class='right_btn' hover-class='hoverClass' bindtap='testAction' data-action_type='2'>选中端口断电</view>
+    </view>
+
+    <view class='btnCellView'>
+      <view class='letf_btn' hover-class='hoverClass' bindtap='testAction' data-action_type='3'>一键充电测试</view>
+      <view class='right_btn' hover-class='hoverClass' bindtap='testAction' data-action_type='4'>一键断电测试</view>
+    </view>
+
+
+    <view class='btnCellView' style='margin-bottom: 100rpx'>
+      <view class='letf_btn' hover-class='hoverClass' bindtap='equipmentTestAction'>设备信息查看</view>
+      <view class='right_btn' style='color:#979797;border-color: #979797'>切换生产环境</view>
+    </view>
+
+  </view>
+</view>

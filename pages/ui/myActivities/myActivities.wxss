@@ -1,0 +1,124 @@
+/* pages/myActivities/myActivities.wxss */
+/*轮播title*/
+
+.scrollView_fun {
+  border-bottom: solid 1rpx #f1f1f1;
+  border-top: solid 1rpx #f1f1f1;
+  width: auto;
+  min-width: 100vw;
+  height: 70rpx;
+   background: white; 
+}
+
+.headView {
+  width: auto;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+/*轮播title 每个子view*/
+
+.headView_item {
+  margin: 10rpx;
+  font-size: 30rpx;
+  width: calc(100vw * 0.3);
+  display: flex;
+  flex-direction: column;
+  /* 垂直，水平居中 */
+  align-items: center;
+  justify-content: center;
+  
+}
+.swiperView {
+  
+  height: calc(100vh - 70rpx);
+  width: 100vw;
+  /* background-color: burlywood; */
+}
+
+.swiper_item_view {
+  height: calc(100vh - 90rpx - 70rpx);
+  width: 100vw;
+}
+.margin_view{
+  height: 30rpx;
+  width: 100vw;
+}
+/***********活动该列表***********/
+.activityListView{
+  
+	width: 100vw;
+	height: calc(100vh - 70rpx);
+}
+/*******************活动推荐view -item*******************/
+.activity_item{
+	width: 100vw;
+	height: 255rpx;
+	font-size: 28rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: solid 1rpx #F1F1F1;
+	background: white;
+}
+
+/*特色推荐item 图片右边的文字view*/
+.activity_item_rightView{
+	width: calc(100vw - 30rpx - 250rpx - 30rpx - 30rpx);
+	height: 190rpx;
+	margin-left: 30rpx;
+	display: flex;
+	flex-direction: column;
+}
+/*特色推荐item 图片右边的文字标题*/
+.activity_item_rightView_title{
+	font-size:34rpx;
+	line-height:48rpx; 
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+
+/*活动聚集地的View*/
+.activity_item_rightView_addressView{
+	width: calc(100vw - 30rpx - 250rpx - 30rpx - 30rpx);
+	height: 40rpx;
+	margin-top: 6rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: #666666;
+}
+
+/*活动聚集地的icon*/
+.activity_item_rightView_addressIcon{
+	width: 20rpx;
+	height: 25rpx;
+	margin-right: 14rpx;
+}
+/*时间icon*/
+.activity_item_rightView_dataIcon{
+	width: 22rpx;
+	height: 22rpx;
+	margin-right: 12rpx;
+}
+/*聚集地地址文字*/
+.activity_item_rightView_addressText{
+	width: calc(100vw - 30rpx - 250rpx - 30rpx - 20rpx - 12rpx - 30rpx);
+	height: 100%;
+	/*禁止换行*/
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+
+/*多活动价格view*/
+.activity_item_rightView_moneyView{
+	width: calc(100vw - 30rpx - 250rpx - 30rpx - 30rpx);
+	height: 40rpx;
+	margin-top: 10rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}

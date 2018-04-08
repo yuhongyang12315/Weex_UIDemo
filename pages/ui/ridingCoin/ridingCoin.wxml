@@ -1,0 +1,55 @@
+<!--骑行币页面-->
+<view class='pageView'>
+  <image class='headImg' src='../../images/ridingcoin.png'></image>
+  <view class='view_one'>
+    <text class='view_one_text_one'>19999</text>
+    <text class='view_one_text_two'>云马骑行币</text>
+  </view>
+  <view class='view_two'>
+    <text class='exchangeLab'>兑换骑行币</text>
+    <view class='exchangeBtn' bindtap='powerDrawer' data-statu="open">兑换</view>
+  </view>
+
+  <view class='view_three'>
+    <view class='view_three_text-one'>温馨提示：</view>
+
+    <view class='textCell'>
+      <view class='pointView'></view>
+      <view class='textView'>骑行币将在骑行订单中自动抵扣费用</view>
+    </view>
+    <view class='textCell'>
+      <view class='pointView'></view>
+      <view class='textView'>骑行币仅用于支付骑行订单，无法购买骑游产品</view>
+    </view>
+    <view class='textCell'>
+      <view class='pointView'></view>
+      <view class='textView'>骑行币不做提现</view>
+    </view>
+    <view class='textCell'>
+      <view class='pointView'></view>
+      <view class='textView'>骑行币通过“骑行兑换码”获得，仅限云马出行品牌官方授权使用。最终解释权归云马出行官方所有</view>
+    </view>
+  </view>
+
+  <!-- /* 弹窗 */ -->
+  <!--mask-->
+  <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+  <!--content-->
+  <!--使用animation属性指定需要执行的动画-->
+  <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+    <view class='alert_title'> 请输入兑换码</view>
+    <input class='alert_input'></input>
+
+    <view class='line_X'></view>
+
+    <view class='left_Btn' bindtap="powerDrawer" data-statu="close">取消</view>
+    <view class='line_y'></view>
+    <view class='Right_Btn' bindtap="powerDrawer" data-statu="close">确定</view>
+
+
+  </view>
+  <!-- /* 弹窗 */ -->
+
+
+</view>

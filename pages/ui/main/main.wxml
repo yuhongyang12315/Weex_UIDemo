@@ -1,0 +1,6 @@
+<view class='container'>
+  <view class='main_cellView' wx:for="{{dataArray}}" wx:key="id" data-url='{{item.url}}' bindtap='cellAction'>
+  <view class='cellview_item'>{{item.id}}：{{item.name}}</view>
+  
+  </view>
+</view>

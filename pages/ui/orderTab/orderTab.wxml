@@ -1,0 +1,118 @@
+<!--订单搜索-->
+<view class="container">
+    <!--搜索-->
+    <view id='searchView'>
+        <view id='search-leftView'>
+            <view id='inputView'>
+                <image id='imageSearch' src='../../../resources/icon-search.png'></image>
+                <input id='searchInput' placeholder-class='inputPlaceholder' placeholder="输入用户姓名或手机号" maxlength='20' bindinput='inputText' confirm-type='search' focus='true' bindconfirm='search' />
+            </view>
+
+        </view>
+        <text id='cleanView' bindtap='cancelAction'>取消</text>
+    </view>
+
+    <!--列表-->
+    <scroll-view class='oneTabView' scroll-y='true' bindscroll='scroll' bindscrolltoupper='scrolltop' bindscrolltolower='scrollbottom' upper-threshold='0' lower-threshold='0'>
+        <view id='loadMore' class='smallText text-gray' wx:if='{{loadRefreshTip}}'>松开刷新</view>
+        <view id='loadMore' class='smallText text-gray' wx:if='{{loadRefresh}}'>正在刷新...</view>
+        <view wx:if='{{datas.length > 0}}'>
+            <view class='cellView' wx:for="{{datas}}" wx:key='id' wx:for-item='item' bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+                <view class='TabViewCell' wx:if="{{item.ride==1 || item.ride==4}}">
+
+                    <view class='contentView_Within'>
+                        <view class='contentView_topView'>
+                            <view class='contentView_topView_lift '>订单编号：{{item.id}}</view>
+                            <view class='contentView_topView_right text-green'>骑行中</view>
+                        </view>
+                        <view class='contentView_middleView'>
+                            <view class='contentView_middleView_view'>
+                                <view class='contentView_middleView_view_cell'>
+                                    <view class='contentView_middleView_view_left'>车辆编号</view>
+                                    <view class='contentView_middleView_view_right'>{{item.qrcode}}</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell'>
+                                    <view class='contentView_middleView_view_left'>订单时间</view>
+                                    <view class='contentView_middleView_view_right'>{{item.addtime}}</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell'>
+                                    <view class='contentView_middleView_view_left'>用户姓名</view>
+                                    <view class='contentView_middleView_view_right'>{{item.user_name}}</view>
+                                </view>
+
+                                <view class='contentView_middleView_view_cell'>
+                                    <view class='contentView_middleView_view_left'>联系电话</view>
+                                    <view class='contentView_middleView_view_right'>{{item.mobile}}</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell'>
+                                    <view class='contentView_middleView_view_left'>骑行时长</view>
+                                    <view class='contentView_middleView_view_right'>{{item.trip_times}}分钟</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell'>
+                                    <view class='contentView_middleView_view_left'>总里程</view>
+                                    <view class='contentView_middleView_view_right'>{{item.trip_journey}}km</view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class='contentView_botoomView'>
+                            <view class='sureBikebtn' bindtap='sureBikebtn' data-id='{{item.id}}' data-tid='{{item.qrcode}}'>确认还车</view>
+                        </view>
+                    </view>
+                </view>
+                <view class='TabViewCell_else' wx:if="{{item.ride==3 || item.ride==5}}">
+
+                    <view class='contentView_Within_else'>
+                        <view class='contentView_topView'>
+                            <view class='contentView_topView_lift'>订单编号：{{item.id}}</view>
+                            <view class='contentView_topView_right text-red ' wx:if="{{item.ride==5}}">待支付</view>
+                            <view class='contentView_topView_right text-green' wx:if="{{item.ride==3}}">已完成</view>
+                        </view>
+                        <view class='line_gray'></view>
+                        <view class='contentView_middleView_else'>
+                            <view class='contentView_middleView_view_else'>
+                                <view class='contentView_middleView_view_cell_else'>
+                                    <view class='contentView_middleView_view_left'>车辆编号</view>
+                                    <view class='contentView_middleView_view_right'>{{item.qrcode}}</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell_else'>
+                                    <view class='contentView_middleView_view_left'>订单时间</view>
+                                    <view class='contentView_middleView_view_right'>{{item.addtime}}</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell_else'>
+                                    <view class='contentView_middleView_view_left'>用户姓名</view>
+                                    <view class='contentView_middleView_view_right'>{{item.user_name}}</view>
+                                </view>
+
+                                <view class='contentView_middleView_view_cell_else'>
+                                    <view class='contentView_middleView_view_left'>联系电话</view>
+                                    <view class='contentView_middleView_view_right'>{{item.mobile}}</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell_else'>
+                                    <view class='contentView_middleView_view_left'>骑行时长</view>
+                                    <view class='contentView_middleView_view_right'>{{item.trip_times}}分钟</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell_else'>
+                                    <view class='contentView_middleView_view_left'>总里程</view>
+                                    <view class='contentView_middleView_view_right'>{{item.trip_journey}}km</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell_else'>
+                                    <view class='contentView_middleView_view_left'>订单费用</view>
+                                    <view class='contentView_middleView_view_right'>{{item.total_amount}}元</view>
+                                </view>
+                                <view class='contentView_middleView_view_cell_else'>
+                                    <view class='contentView_middleView_view_left'>我的收入</view>
+                                    <view class='contentView_middleView_view_right'>{{item.shop_money}}元</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:if='{{datas.length == 0}}' class='emptyView'>没有订单~</view>
+        <!-- 加载提示 -->
+        <view id='loadMore' class='smallText text-gray' wx:if='{{loadMore}}'>正在加载更多...</view>
+        <view id='loadMore' class='smallText text-gray' wx:if='{{loadMoreNoData}}'>已加载全部</view>
+
+    </scroll-view>
+</view>

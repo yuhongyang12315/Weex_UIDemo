@@ -1,0 +1,33 @@
+<!--我的订单-->
+<view class='container'>
+    <scroll-view id='scroll-view' scroll-y='true'>
+        <view wx:if='{{datas.length > 0}}'>
+            <view id='view-item' wx:for='{{datas}}' wx:key='id' wx:for-index='index' wx:for-item='item'>
+                <view id='hover-view' data-index='{{index}}' hover-class='view-hover'>
+                    <!--左边的view-->
+                    <view id='item-left-center-view' class='smallText'>
+                        <image wx:if='{{item.orderType == 0}}' id='img-ordertype' src='{{icon_r_g}}'></image>
+                        <image wx:else id='img-ordertype' src='{{icon_r_r}}'></image>
+                        <view id='item-left-view-v'>
+                            <view id='text-siteName'>{{item.siteName}}</view>
+                            <view id='text-time'>{{item.time}}</view>
+                            <view id='text-time'>充电时间 {{item.totaltime}}分钟</view>
+                            <view id='text-time'>支付费用 {{item.money}}元</view>
+                        </view>
+                    </view>
+
+                    <!--右边的状态view-->
+                    <view id='item-right-view' class='smallText'>
+                        <text id='text-orderType' wx:if='{{item.orderType == 0}}' class='text-gray'>已完成</text>
+                        <text id='text-orderType' wx:elif='{{item.orderType == 2}}' class='text-red'>充电中</text>
+                        <text id='text-orderType' wx:elif='{{item.orderType == 1}}' class='text-red'>待支付</text>
+                        <view id='img-right-view'>
+                            <image id='icon-right' wx:if='{{item.orderType != 0}}' src='{{iconRight}}'></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:else class='emptyView'>没有订单~~</view>
+    </scroll-view>
+</view>

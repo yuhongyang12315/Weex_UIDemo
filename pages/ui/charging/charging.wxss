@@ -1,0 +1,50 @@
+/* pages/ui/charging/charging.wxss */
+/*订单编号*/
+#orderNo {
+	width: 320rpx;
+	height: 48rpx;
+	background: rgba(0, 0, 0, 0.4);
+	margin-top: 36rpx;
+	margin-left: 30rpx;
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	border-radius: 24rpx;
+}
+
+/*剩余充电时间提示文字*/
+#text-charging-tip{
+	width: 100vw;
+	margin-top: 80rpx;
+	text-align: center;
+}
+
+/*倒计时*/
+#text-surplus-time {
+	width: 100vw;
+	text-align: center;
+	font-size: 120rpx;
+}
+
+/*充电接口*/
+#text-interface {
+	width: 100vw;
+	text-align: center;
+}
+
+/*插画*/
+#charging_bg{
+	width: 100vw;
+	/* height: 606rpx; */
+	position: absolute;
+	bottom: 124rpx;
+}
+
+#text-help {
+	width: 100vw;
+	text-align: center;
+	text-decoration: underline;
+	position: absolute;
+	bottom: 50rpx;
+}

@@ -1,0 +1,59 @@
+/* pages/ui/myinfo/myinfo.wxss */
+/*头像*/
+#img-userHead {
+	width: 180rpx;
+	height: 180rpx;
+	background: #F1F1F1;
+	border-radius: 90rpx;
+	margin: auto;
+	margin-top: 80rpx;
+	margin-bottom: 0;
+}
+
+/*昵称*/
+#text-userName {
+	width: 100vw;
+	margin-top: 36rpx;
+	margin-bottom: 0;
+	color: black;
+	font-size: 36rpx;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*中间view*/
+#view-center {
+	width: 100vw;
+	height: 480rpx;
+	margin-top: 100rpx;
+	border-top: solid 1rpx #E5E5E5;
+	border-bottom: solid 1rpx #E5E5E5;
+}
+
+/*中间view item*/
+#view-center-item {
+	width: 100vw;
+	height: 120rpx;
+	display: table-row
+}
+
+/*中间view item 左边文字*/
+#view-center-itemleft-view {
+    height: 120rpx;
+    width: 90vw;
+    margin-right: 30rpx;
+	padding-left: 30rpx;
+	display: table-cell;
+	vertical-align: middle;
+	align-items: center;
+}
+
+/*底部使用提示*/
+#text-useTip {
+	width: 100vw;
+	color: #F05B48;
+	text-decoration: underline;
+	text-align: center;
+	position: absolute;
+	bottom: 74rpx;
+}
